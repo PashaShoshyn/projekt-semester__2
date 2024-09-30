@@ -1,0 +1,104 @@
+.activities {
+    background-color: getColor('white-backround');
+   
+
+    width: 1920px;
+    height: 797px;
+
+
+    &__div{
+        position: absolute;
+        top: 1455px;
+        &--title {
+            font-family: getFont('Montserrat');
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 146%;
+            color: getColor('black-backround');
+            margin-bottom: 60px;
+            margin-top: 152px;
+    
+        }
+
+        &--text {
+            font-family: getFont('Montserrat');
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 158%;
+            color: getColor('gray-color');
+            margin-bottom: 42px;
+            height: 85px;
+            width: 485px;
+        }
+        
+    &--link {
+        font-family: getFont('Montserrat');
+        font-weight: 500;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: getColor('blue-color');
+        
+    }
+    }
+  
+
+    
+
+
+    &--img {
+       
+        position: absolute;
+        top: 1600px;
+        left: 1021px;
+        border-radius: 30px;
+    }
+
+    &--decoration {
+        border: 1px solid getColor('gray-color');
+        width: 1110px;
+        height: 0px;
+        margin-bottom: 70px;
+      
+        position: absolute;
+        top: 2090px;
+    }
+
+    &__list {
+        display: flex;
+        position: absolute;
+        top: 2140px;
+        left: 595px;
+
+        &--item:not(:last-child){
+            margin-right: 100px;
+        }
+       
+    
+        &--text {
+            font-family: getFont('Montserrat');
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 158%;
+            color: getColor('gray-color');
+        }
+    }
+
+   &__container{
+    display: flex;
+    
+    &--title {
+        font-family: getFont('Montserrat');
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 146%;
+        color: getColor('black-text');
+        
+    }
+    &--svg{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+   }
+}
+

@@ -1,0 +1,58 @@
+.team {
+    background-color: getColor('white-backround');
+    position: absolute;
+    top: 3255px;
+    width: 1920px;
+
+    &--title {
+        font-family: getFont('Montserrat');
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 146%;
+        text-align: center;
+        color: getColor('black-text');
+        margin-bottom: 28px;
+    }
+
+    &--text {
+        font-family: getFont('Montserrat');
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 158%;
+        margin-left: 195px;
+        color: getColor('gray-color');
+        margin-bottom: 92px;
+        height: 41px;
+        width: 730px;
+    }
+
+    &__list {
+        display: flex;
+        margin-bottom: 50px;
+
+        &--item:not(:nth-child(n+4)) {
+            margin-right: 30px;
+        }
+
+        &--img {
+            background: #c4c4c4;
+            border-radius: 10px;
+        }
+    }
+
+    &--button {
+        border-radius: 30px;
+        width: 200px;
+        height: 45px;
+        border: none;
+        box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
+        background: getColor('blue-color');
+        margin-left: 460px;
+        font-family: getFont('Montserrat');
+        font-weight: 500;
+        font-size: 16px;
+        text-align: center;
+        color: getColor('white-color');
+        margin-bottom: 130px;
+    }
+}

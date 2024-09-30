@@ -1,0 +1,27 @@
+$colors: (
+    white-color:#FFFFFF,
+    white-backround:#F6F6F8,
+    violet-color:#504DC2,
+    violet-backround:#5F12D0,
+    blue-color:#4985FF,
+    black-color:#323232,
+    black-text:#000000,
+    black-backround:#323232,
+    gray-color:#999999,
+    gray-backround:#E0E0E0,
+    
+
+);
+
+
+$fonts:(
+    font-family: Montserrat,
+);
+
+@function getFont($key) {
+    @return map-get($fonts, $key);
+}
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}

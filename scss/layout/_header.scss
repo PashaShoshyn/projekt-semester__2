@@ -1,0 +1,45 @@
+.header {
+    border: 1px solid #a1a1a1;
+    width: 1920px;
+    
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    // opacity: 0.5;
+
+    &__nav {
+        &--list{
+        display: flex;
+        justify-content: end;
+        }
+        &--item{
+            @include header__nav--item;
+            padding-bottom: 39px;
+            
+        }
+        &--link {
+            font-family: getFont('Montserrat');
+            font-weight: 500;
+            font-size: 16px;
+
+            color: getColor('white-color');
+
+            &.active::after{
+                border: 2px solid getColor('white-color');
+                width: 107px;
+                height: 0px;
+                content: "";
+                bottom: 0px;
+                border-radius: 2px;
+                display: block;
+                position: absolute;
+                right: 880px;
+
+            }
+           
+        }
+    }
+
+}
+

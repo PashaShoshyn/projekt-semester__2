@@ -1,0 +1,93 @@
+.office {
+    background: linear-gradient(getColor('violet-color'), getColor('violet-backround'));
+
+   
+    &__div {
+        display: flex;
+
+
+        justify-content: space-between;
+
+        &--title {
+            font-family: getFont('Montserrat');
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 146%;
+            color: getColor('white-color');
+            margin-top: 100px;
+            margin-bottom: 302px;
+            width: 570px;
+        }
+
+        &--button {
+            border-radius: 30px;
+            width: 200px;
+            height: 45px;
+            box-shadow: 0 0 10px 0 rgba(111, 111, 111, 0.25);
+            background: getColor('blue-color');
+            border: none;
+            margin-top: 120px;
+            font-family: getFont('Montserrat');
+            font-weight: 500;
+            font-size: 16px;
+            text-align: center;
+            color: getColor('white-color');
+        }
+    }
+
+    &__list {
+        position: absolute;
+        top: 2500px;
+        display: flex;
+        width: 1110px;
+
+
+        &--img {
+            border-radius: 10px;
+            background: #c4c4c4, url("path_to_image");
+            margin-bottom: 30px;
+        }
+
+        &--title {
+            font-family: getFont('Montserrat');
+            font-weight: 600;
+            font-size: 18px;
+            color: getColor('black-text');
+        }
+
+        &--span {
+            font-family: getFont('Montserrat');
+            font-weight: 600;
+            font-size: 18px;
+            color: getColor('blue-color');
+        }
+
+        &--text {
+            font-family: getFont('Montserrat');
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 158%;
+            color: getColor('gray-color');
+            margin-bottom: 47px;
+        }
+
+        &--link {
+            font-family: getFont('Montserrat');
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration: underline;
+            text-decoration-skip-ink: none;
+            color: getColor('blue-color');
+            margin-bottom: 170px;
+        }
+    }
+
+    &--decoration{
+
+        position: absolute;
+    border: 1px solid getColor('gray-color');
+    width: 1110px;
+    height: 0px;
+    margin-top: 400px;
+    }
+}
